@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31FD858B1D88842900CBE6B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD858A1D88842900CBE6B9 /* AppDelegate.swift */; };
+		31FD85901D88842900CBE6B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FD858E1D88842900CBE6B9 /* Main.storyboard */; };
+		31FD85921D88842900CBE6B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31FD85911D88842900CBE6B9 /* Assets.xcassets */; };
+		31FD85951D88842900CBE6B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FD85931D88842900CBE6B9 /* LaunchScreen.storyboard */; };
+		31FD85A01D88842900CBE6B9 /* SearchMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD859F1D88842900CBE6B9 /* SearchMusicTests.swift */; };
+		31FD85AB1D88842900CBE6B9 /* SearchMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85AA1D88842900CBE6B9 /* SearchMusicUITests.swift */; };
+		31FD85B91D88867F00CBE6B9 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85B81D88867F00CBE6B9 /* MusicModel.swift */; };
+		31FD85BB1D889B9E00CBE6B9 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85BA1D889B9E00CBE6B9 /* MusicCell.swift */; };
+		31FD85DE1D889DF300CBE6B9 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85BE1D889DF300CBE6B9 /* MKAnnotationView+WebCache.m */; };
+		31FD85DF1D889DF300CBE6B9 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85C01D889DF300CBE6B9 /* NSData+ImageContentType.m */; };
+		31FD85E01D889DF300CBE6B9 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85C21D889DF300CBE6B9 /* SDImageCache.m */; };
+		31FD85E11D889DF300CBE6B9 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85C41D889DF300CBE6B9 /* SDWebImageCompat.m */; };
+		31FD85E21D889DF300CBE6B9 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85C61D889DF300CBE6B9 /* SDWebImageDecoder.m */; };
+		31FD85E31D889DF300CBE6B9 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85C81D889DF300CBE6B9 /* SDWebImageDownloader.m */; };
+		31FD85E41D889DF300CBE6B9 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85CA1D889DF300CBE6B9 /* SDWebImageDownloaderOperation.m */; };
+		31FD85E51D889DF300CBE6B9 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85CC1D889DF300CBE6B9 /* SDWebImageManager.m */; };
+		31FD85E61D889DF300CBE6B9 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85CF1D889DF300CBE6B9 /* SDWebImagePrefetcher.m */; };
+		31FD85E71D889DF300CBE6B9 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85D11D889DF300CBE6B9 /* UIButton+WebCache.m */; };
+		31FD85E81D889DF300CBE6B9 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85D31D889DF300CBE6B9 /* UIImage+GIF.m */; };
+		31FD85E91D889DF300CBE6B9 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85D51D889DF300CBE6B9 /* UIImage+MultiFormat.m */; };
+		31FD85EA1D889DF300CBE6B9 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85D71D889DF300CBE6B9 /* UIImage+WebP.m */; };
+		31FD85EB1D889DF300CBE6B9 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85D91D889DF300CBE6B9 /* UIImageView+HighlightedWebCache.m */; };
+		31FD85EC1D889DF300CBE6B9 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85DB1D889DF300CBE6B9 /* UIImageView+WebCache.m */; };
+		31FD85ED1D889DF300CBE6B9 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85DD1D889DF300CBE6B9 /* UIView+WebCacheOperation.m */; };
+		31FD85F01D88D7A200CBE6B9 /* LyricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85EF1D88D7A200CBE6B9 /* LyricViewController.swift */; };
+		31FD85F21D88F54C00CBE6B9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85F11D88F54C00CBE6B9 /* HomeViewController.swift */; };
+		31FD86021D890A9400CBE6B9 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85F51D890A9400CBE6B9 /* AFHTTPSessionManager.m */; };
+		31FD86031D890A9400CBE6B9 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85F81D890A9400CBE6B9 /* AFNetworkReachabilityManager.m */; };
+		31FD86041D890A9400CBE6B9 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85FA1D890A9400CBE6B9 /* AFSecurityPolicy.m */; };
+		31FD86051D890A9400CBE6B9 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85FC1D890A9400CBE6B9 /* AFURLRequestSerialization.m */; };
+		31FD86061D890A9400CBE6B9 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD85FE1D890A9400CBE6B9 /* AFURLResponseSerialization.m */; };
+		31FD86071D890A9400CBE6B9 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD86001D890A9400CBE6B9 /* AFURLSessionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31FD859C1D88842900CBE6B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FD857F1D88842900CBE6B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31FD85861D88842900CBE6B9;
+			remoteInfo = SearchMusic;
+		};
+		31FD85A71D88842900CBE6B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FD857F1D88842900CBE6B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31FD85861D88842900CBE6B9;
+			remoteInfo = SearchMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31FD85871D88842900CBE6B9 /* SearchMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FD858A1D88842900CBE6B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31FD858F1D88842900CBE6B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31FD85911D88842900CBE6B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31FD85941D88842900CBE6B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31FD85961D88842900CBE6B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31FD859B1D88842900CBE6B9 /* SearchMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FD859F1D88842900CBE6B9 /* SearchMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicTests.swift; sourceTree = "<group>"; };
+		31FD85A11D88842900CBE6B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31FD85A61D88842900CBE6B9 /* SearchMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FD85AA1D88842900CBE6B9 /* SearchMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicUITests.swift; sourceTree = "<group>"; };
+		31FD85AC1D88842900CBE6B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31FD85B81D88867F00CBE6B9 /* MusicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		31FD85BA1D889B9E00CBE6B9 /* MusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
+		31FD85BD1D889DF300CBE6B9 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		31FD85BE1D889DF300CBE6B9 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		31FD85BF1D889DF300CBE6B9 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		31FD85C01D889DF300CBE6B9 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		31FD85C11D889DF300CBE6B9 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		31FD85C21D889DF300CBE6B9 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		31FD85C31D889DF300CBE6B9 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		31FD85C41D889DF300CBE6B9 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		31FD85C51D889DF300CBE6B9 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		31FD85C61D889DF300CBE6B9 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		31FD85C71D889DF300CBE6B9 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		31FD85C81D889DF300CBE6B9 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		31FD85C91D889DF300CBE6B9 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		31FD85CA1D889DF300CBE6B9 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		31FD85CB1D889DF300CBE6B9 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		31FD85CC1D889DF300CBE6B9 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		31FD85CD1D889DF300CBE6B9 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		31FD85CE1D889DF300CBE6B9 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		31FD85CF1D889DF300CBE6B9 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		31FD85D01D889DF300CBE6B9 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		31FD85D11D889DF300CBE6B9 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		31FD85D21D889DF300CBE6B9 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		31FD85D31D889DF300CBE6B9 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		31FD85D41D889DF300CBE6B9 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		31FD85D51D889DF300CBE6B9 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		31FD85D61D889DF300CBE6B9 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		31FD85D71D889DF300CBE6B9 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		31FD85D81D889DF300CBE6B9 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		31FD85D91D889DF300CBE6B9 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		31FD85DA1D889DF300CBE6B9 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		31FD85DB1D889DF300CBE6B9 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		31FD85DC1D889DF300CBE6B9 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		31FD85DD1D889DF300CBE6B9 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		31FD85EE1D889E2200CBE6B9 /* HeaderBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderBridge.h; sourceTree = "<group>"; };
+		31FD85EF1D88D7A200CBE6B9 /* LyricViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricViewController.swift; sourceTree = "<group>"; };
+		31FD85F11D88F54C00CBE6B9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		31FD85F41D890A9400CBE6B9 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		31FD85F51D890A9400CBE6B9 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		31FD85F61D890A9400CBE6B9 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		31FD85F71D890A9400CBE6B9 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		31FD85F81D890A9400CBE6B9 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		31FD85F91D890A9400CBE6B9 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		31FD85FA1D890A9400CBE6B9 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		31FD85FB1D890A9400CBE6B9 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		31FD85FC1D890A9400CBE6B9 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		31FD85FD1D890A9400CBE6B9 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		31FD85FE1D890A9400CBE6B9 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		31FD85FF1D890A9400CBE6B9 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		31FD86001D890A9400CBE6B9 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		31FD86011D890A9400CBE6B9 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31FD85841D88842900CBE6B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FD85981D88842900CBE6B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FD85A31D88842900CBE6B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31FD857E1D88842900CBE6B9 = {
+			isa = PBXGroup;
+			children = (
+				31FD85891D88842900CBE6B9 /* SearchMusic */,
+				31FD859E1D88842900CBE6B9 /* SearchMusicTests */,
+				31FD85A91D88842900CBE6B9 /* SearchMusicUITests */,
+				31FD85881D88842900CBE6B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31FD85881D88842900CBE6B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31FD85871D88842900CBE6B9 /* SearchMusic.app */,
+				31FD859B1D88842900CBE6B9 /* SearchMusicTests.xctest */,
+				31FD85A61D88842900CBE6B9 /* SearchMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31FD85891D88842900CBE6B9 /* SearchMusic */ = {
+			isa = PBXGroup;
+			children = (
+				31FD85F31D890A9400CBE6B9 /* AFNetworking */,
+				31FD85BC1D889DF300CBE6B9 /* SDWebImage */,
+				31FD858A1D88842900CBE6B9 /* AppDelegate.swift */,
+				31FD85B81D88867F00CBE6B9 /* MusicModel.swift */,
+				31FD858E1D88842900CBE6B9 /* Main.storyboard */,
+				31FD85911D88842900CBE6B9 /* Assets.xcassets */,
+				31FD85931D88842900CBE6B9 /* LaunchScreen.storyboard */,
+				31FD85961D88842900CBE6B9 /* Info.plist */,
+				31FD85BA1D889B9E00CBE6B9 /* MusicCell.swift */,
+				31FD85EE1D889E2200CBE6B9 /* HeaderBridge.h */,
+				31FD85EF1D88D7A200CBE6B9 /* LyricViewController.swift */,
+				31FD85F11D88F54C00CBE6B9 /* HomeViewController.swift */,
+			);
+			path = SearchMusic;
+			sourceTree = "<group>";
+		};
+		31FD859E1D88842900CBE6B9 /* SearchMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				31FD859F1D88842900CBE6B9 /* SearchMusicTests.swift */,
+				31FD85A11D88842900CBE6B9 /* Info.plist */,
+			);
+			path = SearchMusicTests;
+			sourceTree = "<group>";
+		};
+		31FD85A91D88842900CBE6B9 /* SearchMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				31FD85AA1D88842900CBE6B9 /* SearchMusicUITests.swift */,
+				31FD85AC1D88842900CBE6B9 /* Info.plist */,
+			);
+			path = SearchMusicUITests;
+			sourceTree = "<group>";
+		};
+		31FD85BC1D889DF300CBE6B9 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				31FD85BD1D889DF300CBE6B9 /* MKAnnotationView+WebCache.h */,
+				31FD85BE1D889DF300CBE6B9 /* MKAnnotationView+WebCache.m */,
+				31FD85BF1D889DF300CBE6B9 /* NSData+ImageContentType.h */,
+				31FD85C01D889DF300CBE6B9 /* NSData+ImageContentType.m */,
+				31FD85C11D889DF300CBE6B9 /* SDImageCache.h */,
+				31FD85C21D889DF300CBE6B9 /* SDImageCache.m */,
+				31FD85C31D889DF300CBE6B9 /* SDWebImageCompat.h */,
+				31FD85C41D889DF300CBE6B9 /* SDWebImageCompat.m */,
+				31FD85C51D889DF300CBE6B9 /* SDWebImageDecoder.h */,
+				31FD85C61D889DF300CBE6B9 /* SDWebImageDecoder.m */,
+				31FD85C71D889DF300CBE6B9 /* SDWebImageDownloader.h */,
+				31FD85C81D889DF300CBE6B9 /* SDWebImageDownloader.m */,
+				31FD85C91D889DF300CBE6B9 /* SDWebImageDownloaderOperation.h */,
+				31FD85CA1D889DF300CBE6B9 /* SDWebImageDownloaderOperation.m */,
+				31FD85CB1D889DF300CBE6B9 /* SDWebImageManager.h */,
+				31FD85CC1D889DF300CBE6B9 /* SDWebImageManager.m */,
+				31FD85CD1D889DF300CBE6B9 /* SDWebImageOperation.h */,
+				31FD85CE1D889DF300CBE6B9 /* SDWebImagePrefetcher.h */,
+				31FD85CF1D889DF300CBE6B9 /* SDWebImagePrefetcher.m */,
+				31FD85D01D889DF300CBE6B9 /* UIButton+WebCache.h */,
+				31FD85D11D889DF300CBE6B9 /* UIButton+WebCache.m */,
+				31FD85D21D889DF300CBE6B9 /* UIImage+GIF.h */,
+				31FD85D31D889DF300CBE6B9 /* UIImage+GIF.m */,
+				31FD85D41D889DF300CBE6B9 /* UIImage+MultiFormat.h */,
+				31FD85D51D889DF300CBE6B9 /* UIImage+MultiFormat.m */,
+				31FD85D61D889DF300CBE6B9 /* UIImage+WebP.h */,
+				31FD85D71D889DF300CBE6B9 /* UIImage+WebP.m */,
+				31FD85D81D889DF300CBE6B9 /* UIImageView+HighlightedWebCache.h */,
+				31FD85D91D889DF300CBE6B9 /* UIImageView+HighlightedWebCache.m */,
+				31FD85DA1D889DF300CBE6B9 /* UIImageView+WebCache.h */,
+				31FD85DB1D889DF300CBE6B9 /* UIImageView+WebCache.m */,
+				31FD85DC1D889DF300CBE6B9 /* UIView+WebCacheOperation.h */,
+				31FD85DD1D889DF300CBE6B9 /* UIView+WebCacheOperation.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		31FD85F31D890A9400CBE6B9 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				31FD85F41D890A9400CBE6B9 /* AFHTTPSessionManager.h */,
+				31FD85F51D890A9400CBE6B9 /* AFHTTPSessionManager.m */,
+				31FD85F61D890A9400CBE6B9 /* AFNetworking.h */,
+				31FD85F71D890A9400CBE6B9 /* AFNetworkReachabilityManager.h */,
+				31FD85F81D890A9400CBE6B9 /* AFNetworkReachabilityManager.m */,
+				31FD85F91D890A9400CBE6B9 /* AFSecurityPolicy.h */,
+				31FD85FA1D890A9400CBE6B9 /* AFSecurityPolicy.m */,
+				31FD85FB1D890A9400CBE6B9 /* AFURLRequestSerialization.h */,
+				31FD85FC1D890A9400CBE6B9 /* AFURLRequestSerialization.m */,
+				31FD85FD1D890A9400CBE6B9 /* AFURLResponseSerialization.h */,
+				31FD85FE1D890A9400CBE6B9 /* AFURLResponseSerialization.m */,
+				31FD85FF1D890A9400CBE6B9 /* AFURLSessionManager.h */,
+				31FD86001D890A9400CBE6B9 /* AFURLSessionManager.m */,
+				31FD86011D890A9400CBE6B9 /* bridge.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31FD85861D88842900CBE6B9 /* SearchMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31FD85AF1D88842900CBE6B9 /* Build configuration list for PBXNativeTarget "SearchMusic" */;
+			buildPhases = (
+				31FD85831D88842900CBE6B9 /* Sources */,
+				31FD85841D88842900CBE6B9 /* Frameworks */,
+				31FD85851D88842900CBE6B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchMusic;
+			productName = SearchMusic;
+			productReference = 31FD85871D88842900CBE6B9 /* SearchMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31FD859A1D88842900CBE6B9 /* SearchMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31FD85B21D88842900CBE6B9 /* Build configuration list for PBXNativeTarget "SearchMusicTests" */;
+			buildPhases = (
+				31FD85971D88842900CBE6B9 /* Sources */,
+				31FD85981D88842900CBE6B9 /* Frameworks */,
+				31FD85991D88842900CBE6B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31FD859D1D88842900CBE6B9 /* PBXTargetDependency */,
+			);
+			name = SearchMusicTests;
+			productName = SearchMusicTests;
+			productReference = 31FD859B1D88842900CBE6B9 /* SearchMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		31FD85A51D88842900CBE6B9 /* SearchMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31FD85B51D88842900CBE6B9 /* Build configuration list for PBXNativeTarget "SearchMusicUITests" */;
+			buildPhases = (
+				31FD85A21D88842900CBE6B9 /* Sources */,
+				31FD85A31D88842900CBE6B9 /* Frameworks */,
+				31FD85A41D88842900CBE6B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31FD85A81D88842900CBE6B9 /* PBXTargetDependency */,
+			);
+			name = SearchMusicUITests;
+			productName = SearchMusicUITests;
+			productReference = 31FD85A61D88842900CBE6B9 /* SearchMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31FD857F1D88842900CBE6B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Elva;
+				TargetAttributes = {
+					31FD85861D88842900CBE6B9 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					31FD859A1D88842900CBE6B9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 31FD85861D88842900CBE6B9;
+					};
+					31FD85A51D88842900CBE6B9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 31FD85861D88842900CBE6B9;
+					};
+				};
+			};
+			buildConfigurationList = 31FD85821D88842900CBE6B9 /* Build configuration list for PBXProject "SearchMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31FD857E1D88842900CBE6B9;
+			productRefGroup = 31FD85881D88842900CBE6B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31FD85861D88842900CBE6B9 /* SearchMusic */,
+				31FD859A1D88842900CBE6B9 /* SearchMusicTests */,
+				31FD85A51D88842900CBE6B9 /* SearchMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31FD85851D88842900CBE6B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FD85951D88842900CBE6B9 /* LaunchScreen.storyboard in Resources */,
+				31FD85921D88842900CBE6B9 /* Assets.xcassets in Resources */,
+				31FD85901D88842900CBE6B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FD85991D88842900CBE6B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FD85A41D88842900CBE6B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31FD85831D88842900CBE6B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FD85EB1D889DF300CBE6B9 /* UIImageView+HighlightedWebCache.m in Sources */,
+				31FD85F01D88D7A200CBE6B9 /* LyricViewController.swift in Sources */,
+				31FD85E91D889DF300CBE6B9 /* UIImage+MultiFormat.m in Sources */,
+				31FD85E41D889DF300CBE6B9 /* SDWebImageDownloaderOperation.m in Sources */,
+				31FD86041D890A9400CBE6B9 /* AFSecurityPolicy.m in Sources */,
+				31FD85E11D889DF300CBE6B9 /* SDWebImageCompat.m in Sources */,
+				31FD86021D890A9400CBE6B9 /* AFHTTPSessionManager.m in Sources */,
+				31FD85E81D889DF300CBE6B9 /* UIImage+GIF.m in Sources */,
+				31FD85F21D88F54C00CBE6B9 /* HomeViewController.swift in Sources */,
+				31FD85E61D889DF300CBE6B9 /* SDWebImagePrefetcher.m in Sources */,
+				31FD858B1D88842900CBE6B9 /* AppDelegate.swift in Sources */,
+				31FD85B91D88867F00CBE6B9 /* MusicModel.swift in Sources */,
+				31FD85EA1D889DF300CBE6B9 /* UIImage+WebP.m in Sources */,
+				31FD85EC1D889DF300CBE6B9 /* UIImageView+WebCache.m in Sources */,
+				31FD85E31D889DF300CBE6B9 /* SDWebImageDownloader.m in Sources */,
+				31FD85ED1D889DF300CBE6B9 /* UIView+WebCacheOperation.m in Sources */,
+				31FD85E71D889DF300CBE6B9 /* UIButton+WebCache.m in Sources */,
+				31FD86051D890A9400CBE6B9 /* AFURLRequestSerialization.m in Sources */,
+				31FD86071D890A9400CBE6B9 /* AFURLSessionManager.m in Sources */,
+				31FD86061D890A9400CBE6B9 /* AFURLResponseSerialization.m in Sources */,
+				31FD86031D890A9400CBE6B9 /* AFNetworkReachabilityManager.m in Sources */,
+				31FD85DE1D889DF300CBE6B9 /* MKAnnotationView+WebCache.m in Sources */,
+				31FD85DF1D889DF300CBE6B9 /* NSData+ImageContentType.m in Sources */,
+				31FD85BB1D889B9E00CBE6B9 /* MusicCell.swift in Sources */,
+				31FD85E51D889DF300CBE6B9 /* SDWebImageManager.m in Sources */,
+				31FD85E21D889DF300CBE6B9 /* SDWebImageDecoder.m in Sources */,
+				31FD85E01D889DF300CBE6B9 /* SDImageCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FD85971D88842900CBE6B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FD85A01D88842900CBE6B9 /* SearchMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FD85A21D88842900CBE6B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FD85AB1D88842900CBE6B9 /* SearchMusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31FD859D1D88842900CBE6B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31FD85861D88842900CBE6B9 /* SearchMusic */;
+			targetProxy = 31FD859C1D88842900CBE6B9 /* PBXContainerItemProxy */;
+		};
+		31FD85A81D88842900CBE6B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31FD85861D88842900CBE6B9 /* SearchMusic */;
+			targetProxy = 31FD85A71D88842900CBE6B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31FD858E1D88842900CBE6B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31FD858F1D88842900CBE6B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31FD85931D88842900CBE6B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31FD85941D88842900CBE6B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31FD85AD1D88842900CBE6B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31FD85AE1D88842900CBE6B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31FD85B01D88842900CBE6B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SearchMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elva.SearchMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SearchMusic/HeaderBridge.h;
+			};
+			name = Debug;
+		};
+		31FD85B11D88842900CBE6B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SearchMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elva.SearchMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SearchMusic/HeaderBridge.h;
+			};
+			name = Release;
+		};
+		31FD85B31D88842900CBE6B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SearchMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elva.SearchMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchMusic.app/SearchMusic";
+			};
+			name = Debug;
+		};
+		31FD85B41D88842900CBE6B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SearchMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elva.SearchMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchMusic.app/SearchMusic";
+			};
+			name = Release;
+		};
+		31FD85B61D88842900CBE6B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SearchMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elva.SearchMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SearchMusic;
+			};
+			name = Debug;
+		};
+		31FD85B71D88842900CBE6B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SearchMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elva.SearchMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SearchMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31FD85821D88842900CBE6B9 /* Build configuration list for PBXProject "SearchMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FD85AD1D88842900CBE6B9 /* Debug */,
+				31FD85AE1D88842900CBE6B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31FD85AF1D88842900CBE6B9 /* Build configuration list for PBXNativeTarget "SearchMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FD85B01D88842900CBE6B9 /* Debug */,
+				31FD85B11D88842900CBE6B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		31FD85B21D88842900CBE6B9 /* Build configuration list for PBXNativeTarget "SearchMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FD85B31D88842900CBE6B9 /* Debug */,
+				31FD85B41D88842900CBE6B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		31FD85B51D88842900CBE6B9 /* Build configuration list for PBXNativeTarget "SearchMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FD85B61D88842900CBE6B9 /* Debug */,
+				31FD85B71D88842900CBE6B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31FD857F1D88842900CBE6B9 /* Project object */;
+}
